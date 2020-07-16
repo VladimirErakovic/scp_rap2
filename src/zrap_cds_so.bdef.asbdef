@@ -1,0 +1,12 @@
+managed; // implementation in class zbp_rap_cds_so unique;
+
+define behavior for ZRAP_CDS_SO alias orders
+persistent table ZRAP_SO
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}
